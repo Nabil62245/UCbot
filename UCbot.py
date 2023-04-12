@@ -1,7 +1,7 @@
 from fbchat import Client, log, _graphql
 from fbchat.models import *
 import pymongo, re
-from keep_alive import keep_alive
+# from keep_alive import keep_alive
 
 admins = ['100007289010328', '100083658307984', '100082754857375']
 
@@ -431,7 +431,7 @@ Dᴇᴀʀ {User['name']} ❤️
 
 while True: 
     try:
-        keep_alive()
+#         keep_alive()
         c_user = "100007289010328"
         xs = pymongo.MongoClient("mongodb+srv://pBot:%24%24Nabil%24%24@pbot.wttlhxr.mongodb.net/?retryWrites=true&w=majority")['Users'].userInfo.find({"c_user" : c_user})[0]["xs"]
 
